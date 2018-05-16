@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class CountryActivity extends AppCompatActivity {
+public class JazzActivity extends AppCompatActivity {
     private MediaPlayer mMediaPlayer;
 
     /* Handles audio focus when playing a sound file */
@@ -50,10 +50,9 @@ public class CountryActivity extends AppCompatActivity {
         final ArrayList<Song> songs = new ArrayList<Song>();
 
         // Add word objects to the list of phrases
-        songs.add(new Song("As Good as I once was", "Toby Keith", R.drawable.image, R.raw.asgoodasioncewas));
-        songs.add(new Song("I love this bar", "Toby Keith", R.drawable.image, R.raw.ilovethisbar));
-        songs.add(new Song("Beer for my horses", "Toby Keith", R.drawable.image, R.raw.beerformyhorses));
-
+        songs.add(new Song("My My My", "Gerald Albright", R.drawable.image, R.raw.mymymy));
+        songs.add(new Song("Bermuda Nights", "Gerald Albright", R.drawable.image, R.raw.bermudanights));
+        songs.add(new Song("So Amazing", "Gerald Albright", R.drawable.image, R.raw.soamazing));
 
         // Create a new PhraseAdapter and we are calling it adapter. We are calling the contructor and passing it a context and the array list of word objects
         SongAdapter adapter = new SongAdapter(this, songs, R.color.colorPrimary);
@@ -82,7 +81,7 @@ public class CountryActivity extends AppCompatActivity {
                 if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
                     // We have Audio Focus now
                     // Create and setup the Media Player for the audio associated with the word
-                    mMediaPlayer = MediaPlayer.create(CountryActivity.this, song.getAudioResourceId());
+                    mMediaPlayer = MediaPlayer.create(JazzActivity.this, song.getAudioResourceId());
                     // Start the audio file
                     mMediaPlayer.start();
                     // setup a listener on the media player, so that we can stop and release the media player once the sounds has finished playing

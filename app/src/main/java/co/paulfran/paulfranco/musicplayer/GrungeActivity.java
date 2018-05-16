@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class CountryActivity extends AppCompatActivity {
+public class GrungeActivity extends AppCompatActivity {
     private MediaPlayer mMediaPlayer;
 
     /* Handles audio focus when playing a sound file */
@@ -50,10 +50,9 @@ public class CountryActivity extends AppCompatActivity {
         final ArrayList<Song> songs = new ArrayList<Song>();
 
         // Add word objects to the list of phrases
-        songs.add(new Song("As Good as I once was", "Toby Keith", R.drawable.image, R.raw.asgoodasioncewas));
-        songs.add(new Song("I love this bar", "Toby Keith", R.drawable.image, R.raw.ilovethisbar));
-        songs.add(new Song("Beer for my horses", "Toby Keith", R.drawable.image, R.raw.beerformyhorses));
-
+        songs.add(new Song("Smells Like Teen Spirit", "Nirvana", R.drawable.image, R.raw.smellsliketeenspirit));
+        songs.add(new Song("Come as you are", "Nirvana", R.drawable.image, R.raw.comeasyouare));
+        songs.add(new Song("Lithium", "Nirvana", R.drawable.image, R.raw.lithium));
 
         // Create a new PhraseAdapter and we are calling it adapter. We are calling the contructor and passing it a context and the array list of word objects
         SongAdapter adapter = new SongAdapter(this, songs, R.color.colorPrimary);
@@ -82,7 +81,7 @@ public class CountryActivity extends AppCompatActivity {
                 if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
                     // We have Audio Focus now
                     // Create and setup the Media Player for the audio associated with the word
-                    mMediaPlayer = MediaPlayer.create(CountryActivity.this, song.getAudioResourceId());
+                    mMediaPlayer = MediaPlayer.create(GrungeActivity.this, song.getAudioResourceId());
                     // Start the audio file
                     mMediaPlayer.start();
                     // setup a listener on the media player, so that we can stop and release the media player once the sounds has finished playing
