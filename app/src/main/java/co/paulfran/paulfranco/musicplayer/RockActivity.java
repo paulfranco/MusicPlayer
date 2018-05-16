@@ -90,6 +90,7 @@ public class RockActivity extends AppCompatActivity {
 
             }
         });
+        setTitle("Rock Music");
     }
 
     @Override

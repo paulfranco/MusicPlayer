@@ -90,6 +90,7 @@ public class GrungeActivity extends AppCompatActivity {
 
             }
         });
+        setTitle("Grunge Music");
     }
 
     @Override

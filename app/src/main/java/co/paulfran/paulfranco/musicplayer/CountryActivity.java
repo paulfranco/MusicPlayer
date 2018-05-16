@@ -91,6 +91,7 @@ public class CountryActivity extends AppCompatActivity {
 
             }
         });
+        setTitle("Country Music");
     }
 
     @Override

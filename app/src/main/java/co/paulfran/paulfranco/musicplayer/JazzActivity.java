@@ -93,6 +93,7 @@ public class JazzActivity extends AppCompatActivity {
 
             }
         });
+        setTitle("Jazz Music");
     }
 
     @Override
