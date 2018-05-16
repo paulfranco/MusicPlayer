@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -46,16 +48,16 @@ public class JazzActivity extends AppCompatActivity {
         // Create and setup the AudioManager to request audio focus
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
-        // Create a list of phrases
+        // Create a list of songs
         final ArrayList<Song> songs = new ArrayList<Song>();
 
-        // Add word objects to the list of phrases
+        // Add word objects to the list of songs
         songs.add(new Song("My My My", "Gerald Albright", R.drawable.image, R.raw.mymymy));
         songs.add(new Song("Bermuda Nights", "Gerald Albright", R.drawable.image, R.raw.bermudanights));
         songs.add(new Song("So Amazing", "Gerald Albright", R.drawable.image, R.raw.soamazing));
 
-        // Create a new PhraseAdapter and we are calling it adapter. We are calling the contructor and passing it a context and the array list of word objects
-        SongAdapter adapter = new SongAdapter(this, songs, R.color.colorPrimary);
+        // Create a new SongAdapter called adapter. We are calling the contructor and passing it a context and the array list of song objects
+        SongAdapter adapter = new SongAdapter(this, songs, R.color.category_blue);
 
         // Create a list view
         ListView listView = (ListView) findViewById(R.id.list);
@@ -66,6 +68,7 @@ public class JazzActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                 // get the object ant the position clicked on and store in variable
                 Song song = songs.get(position);
                 // Create and setup the Media Player for the audio associated with the word

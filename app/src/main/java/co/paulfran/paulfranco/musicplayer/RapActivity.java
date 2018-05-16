@@ -46,16 +46,16 @@ public class RapActivity extends AppCompatActivity {
         // Create and setup the AudioManager to request audio focus
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
-        // Create a list of phrases
+        // Create a list of songs
         final ArrayList<Song> songs = new ArrayList<Song>();
 
-        // Add word objects to the list of phrases
+        // Add song objects to the list of songs
         songs.add(new Song("Still D.R.E. ft. Snoop Dogg", "Dr. Dre", R.drawable.image, R.raw.still));
         songs.add(new Song("Nuthin But A G Thang", "Dr. Dre", R.drawable.image, R.raw.nuthingbutagthang));
         songs.add(new Song("Dr. Dre - Kush ft. Snoop Dogg, Akon", "Dr. Dre", R.drawable.image, R.raw.kush));
 
-        // Create a new PhraseAdapter and we are calling it adapter. We are calling the contructor and passing it a context and the array list of word objects
-        SongAdapter adapter = new SongAdapter(this, songs, R.color.colorPrimary);
+        // Create a new SongAdapter called adapter. We are calling the contructor and passing it a context and the array list of song objects
+        SongAdapter adapter = new SongAdapter(this, songs, R.color.category_blue);
 
         // Create a list view
         ListView listView = (ListView) findViewById(R.id.list);

@@ -46,7 +46,7 @@ public class CountryActivity extends AppCompatActivity {
         // Create and setup the AudioManager to request audio focus
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
-        // Create a list of phrases
+        // Create a list of songs
         final ArrayList<Song> songs = new ArrayList<Song>();
 
         // Add word objects to the list of phrases
@@ -55,8 +55,8 @@ public class CountryActivity extends AppCompatActivity {
         songs.add(new Song("Beer for my horses", "Toby Keith", R.drawable.image, R.raw.beerformyhorses));
 
 
-        // Create a new PhraseAdapter and we are calling it adapter. We are calling the contructor and passing it a context and the array list of word objects
-        SongAdapter adapter = new SongAdapter(this, songs, R.color.colorPrimary);
+        // Create a new SongAdapter and we are calling it adapter. We are calling the contructor and passing it a context and the array list of song objects
+        SongAdapter adapter = new SongAdapter(this, songs, R.color.category_blue);
 
         // Create a list view
         ListView listView = (ListView) findViewById(R.id.list);

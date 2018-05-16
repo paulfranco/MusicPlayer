@@ -46,16 +46,16 @@ public class GrungeActivity extends AppCompatActivity {
         // Create and setup the AudioManager to request audio focus
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
-        // Create a list of phrases
+        // Create a list of songs
         final ArrayList<Song> songs = new ArrayList<Song>();
 
-        // Add word objects to the list of phrases
+        // Add word objects to the list of songs
         songs.add(new Song("Smells Like Teen Spirit", "Nirvana", R.drawable.image, R.raw.smellsliketeenspirit));
         songs.add(new Song("Come as you are", "Nirvana", R.drawable.image, R.raw.comeasyouare));
         songs.add(new Song("Lithium", "Nirvana", R.drawable.image, R.raw.lithium));
 
-        // Create a new PhraseAdapter and we are calling it adapter. We are calling the contructor and passing it a context and the array list of word objects
-        SongAdapter adapter = new SongAdapter(this, songs, R.color.colorPrimary);
+        // Create a new SongAdapter and we are calling it adapter. We are calling the contructor and passing it a context and the array list of song objects
+        SongAdapter adapter = new SongAdapter(this, songs, R.color.category_blue);
 
         // Create a list view
         ListView listView = (ListView) findViewById(R.id.list);

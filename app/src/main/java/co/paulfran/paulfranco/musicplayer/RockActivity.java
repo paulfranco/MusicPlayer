@@ -46,16 +46,16 @@ public class RockActivity extends AppCompatActivity {
         // Create and setup the AudioManager to request audio focus
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
-        // Create a list of phrases
+        // Create a list of songs
         final ArrayList<Song> songs = new ArrayList<Song>();
 
-        // Add word objects to the list of phrases
+        // Add word objects to the list of songs
         songs.add(new Song("Paint it Black", "The Rolling Stones", R.drawable.image, R.raw.paintitblack));
         songs.add(new Song("Thunderstruck", "AC/DC", R.drawable.image, R.raw.thunderstruck));
         songs.add(new Song("Back in Black", "AC/DC", R.drawable.image, R.raw.backinblack));
 
-        // Create a new PhraseAdapter and we are calling it adapter. We are calling the contructor and passing it a context and the array list of word objects
-        SongAdapter adapter = new SongAdapter(this, songs, R.color.colorPrimary);
+        // Create a new SongAdapter called adapter. We are calling the contructor and passing it a context and the array list of song objects
+        SongAdapter adapter = new SongAdapter(this, songs, R.color.category_blue);
 
         // Create a list view
         ListView listView = (ListView) findViewById(R.id.list);

@@ -46,15 +46,15 @@ public class ClassicalActivity extends AppCompatActivity {
         // Create and setup the AudioManager to request audio focus
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
-        // Create a list of phrases
+        // Create a list of songs
         final ArrayList<Song> songs = new ArrayList<Song>();
 
-        // Add word objects to the list of phrases
-        songs.add(new Song("Where are you going?", "Mozart", R.drawable.image, R.raw.serenata));
+        // Add song objects to the list of songs
+        songs.add(new Song("Serenade K 525 Eine Kleine Nachtmusik Allegro in G Major", "Mozart", R.drawable.image, R.raw.serenata));
 
 
-        // Create a new PhraseAdapter and we are calling it adapter. We are calling the contructor and passing it a context and the array list of word objects
-        SongAdapter adapter = new SongAdapter(this, songs, R.color.colorPrimary);
+        // Create a new SongAdapter called adapter. We are calling the contructor and passing it a context and the array list of song objects
+        SongAdapter adapter = new SongAdapter(this, songs, R.color.category_blue);
 
         // Create a list view
         ListView listView = (ListView) findViewById(R.id.list);
