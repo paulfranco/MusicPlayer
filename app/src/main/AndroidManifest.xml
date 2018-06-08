@@ -16,6 +16,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".RockActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".CountryActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".JazzActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".RapActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ClassicalActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".GrungeActivity"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
     </application>
 
 </manifest>

@@ -50,9 +50,9 @@ public class RockActivity extends AppCompatActivity {
         final ArrayList<Song> songs = new ArrayList<Song>();
 
         // Add word objects to the list of songs
-        songs.add(new Song("Paint it Black", "The Rolling Stones", R.drawable.image, R.raw.paintitblack));
-        songs.add(new Song("Thunderstruck", "AC/DC", R.drawable.image, R.raw.thunderstruck));
-        songs.add(new Song("Back in Black", "AC/DC", R.drawable.image, R.raw.backinblack));
+        songs.add(new Song("Paint it Black", "The Rolling Stones", R.drawable.image, R.raw.serenata));
+        songs.add(new Song("Thunderstruck", "AC/DC", R.drawable.image, R.raw.serenata));
+        songs.add(new Song("Back in Black", "AC/DC", R.drawable.image, R.raw.serenata));
 
         // Create a new SongAdapter called adapter. We are calling the contructor and passing it a context and the array list of song objects
         SongAdapter adapter = new SongAdapter(this, songs, R.color.category_blue);

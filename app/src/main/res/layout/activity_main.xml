@@ -12,11 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@android:color/holo_blue_bright"
+        android:background="?android:attr/selectableItemBackground"
         android:fontFamily="@font/nosifer"
         android:gravity="center"
-        android:text="Rock"
-        android:textColor="@android:color/white"
+        android:text="@string/rock"
+        android:textColor="@android:color/black"
         android:textSize="24sp" />
 
     <TextView
@@ -24,11 +24,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@android:color/holo_green_light"
+        android:background="?android:attr/selectableItemBackground"
         android:fontFamily="@font/nosifer"
         android:gravity="center"
-        android:text="Country"
-        android:textColor="@android:color/white"
+        android:text="@string/country"
+        android:textColor="@android:color/black"
         android:textSize="24sp" />
 
     <TextView
@@ -36,11 +36,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@android:color/holo_purple"
+        android:background="?android:attr/selectableItemBackground"
         android:fontFamily="@font/nosifer"
         android:gravity="center"
-        android:text="jazz"
-        android:textColor="@android:color/white"
+        android:text="@string/jazz"
+        android:textColor="@android:color/black"
         android:textSize="24sp" />
 
     <TextView
@@ -48,11 +48,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@android:color/holo_orange_light"
+        android:background="?android:attr/selectableItemBackground"
         android:fontFamily="@font/nosifer"
         android:gravity="center"
-        android:text="Rap"
-        android:textColor="@android:color/white"
+        android:text="@string/rap"
+        android:textColor="@android:color/black"
         android:textSize="24sp" />
 
     <TextView
@@ -60,10 +60,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@android:color/holo_red_light"
+        android:background="?android:attr/selectableItemBackground"
         android:fontFamily="@font/nosifer"
         android:gravity="center"
-        android:text="Classical"
+        android:text="@string/classical"
+        android:textColor="@android:color/black"
         android:textSize="24sp" />
 
     <TextView
@@ -71,11 +72,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@android:color/black"
+        android:background="?android:attr/selectableItemBackground"
         android:fontFamily="@font/nosifer"
         android:gravity="center"
-        android:text="Grunge"
-        android:textColor="@android:color/white"
+        android:text="@string/grunge"
+        android:textColor="@android:color/black"
         android:textSize="24sp" />
 
 </LinearLayout>
