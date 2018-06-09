@@ -50,16 +50,17 @@ public class CountryActivity extends AppCompatActivity {
         final ArrayList<Song> songs = new ArrayList<Song>();
 
         // Add word objects to the list of phrases
-        songs.add(new Song("As Good as I once was", "Toby Keith", R.drawable.image, R.raw.serenata));
-        songs.add(new Song("I love this bar", "Toby Keith", R.drawable.image, R.raw.serenata));
-        songs.add(new Song("Beer for my horses", "Toby Keith", R.drawable.image, R.raw.serenata));
+        songs.add(new Song("As Good as I once was", "Toby Keith", R.drawable.apps, R.raw.serenata));
+        songs.add(new Song("I love this bar", "Toby Keith", R.drawable.apps, R.raw.serenata));
+        songs.add(new Song("Beer for my horses", "Toby Keith", R.drawable.apps, R.raw.serenata));
 
 
         // Create a new SongAdapter and we are calling it adapter. We are calling the contructor and passing it a context and the array list of song objects
         SongAdapter adapter = new SongAdapter(this, songs, R.color.category_blue);
 
         // Create a list view
-        ListView listView = (ListView) findViewById(R.id.list);
+        // removed casting
+        ListView listView = findViewById(R.id.list);
 
         // Passing the adapter to the list view
         listView.setAdapter(adapter);

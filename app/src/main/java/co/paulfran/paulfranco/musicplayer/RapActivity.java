@@ -50,15 +50,16 @@ public class RapActivity extends AppCompatActivity {
         final ArrayList<Song> songs = new ArrayList<Song>();
 
         // Add song objects to the list of songs
-        songs.add(new Song("Still D.R.E.", "Dr. Dre", R.drawable.image, R.raw.serenata));
-        songs.add(new Song("Nuthin But A G Thang", "Dr. Dre", R.drawable.image, R.raw.serenata));
-        songs.add(new Song("Dr. Dre - Kush", "Dr. Dre", R.drawable.image, R.raw.serenata));
+        songs.add(new Song("Still D.R.E.", "Dr. Dre", R.drawable.apps, R.raw.serenata));
+        songs.add(new Song("Nuthin But A G Thang", "Dr. Dre", R.drawable.apps, R.raw.serenata));
+        songs.add(new Song("Dr. Dre - Kush", "Dr. Dre", R.drawable.apps, R.raw.serenata));
 
         // Create a new SongAdapter called adapter. We are calling the contructor and passing it a context and the array list of song objects
         SongAdapter adapter = new SongAdapter(this, songs, R.color.category_blue);
 
         // Create a list view
-        ListView listView = (ListView) findViewById(R.id.list);
+        // removed casting
+        ListView listView = findViewById(R.id.list);
 
         // Passing the adapter to the list view
         listView.setAdapter(adapter);

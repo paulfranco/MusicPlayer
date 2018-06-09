@@ -36,19 +36,21 @@ public class SongAdapter extends ArrayAdapter<Song>{
         Song currentSong = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
-        TextView songTitleTextView = (TextView) listItemView.findViewById(R.id.song_title_text_view);
+        // removed the redundancy of casting
+        TextView songTitleTextView = listItemView.findViewById(R.id.song_title_text_view);
         // Get the version name from the current AndroidFlavor object and
         // set this text on the name TextView
         songTitleTextView.setText(currentSong.getSongTitle());
 
         // Find the TextView in the list_item.xml layout with the ID version_number
-        TextView artistTextView = (TextView) listItemView.findViewById(R.id.artist_text_view);
+        TextView artistTextView = listItemView.findViewById(R.id.artist_text_view);
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
         artistTextView.setText(currentSong.getArtistName());
 
         // Find the ImageView in the list_item.xml layout with the ID list_item_icon
-        ImageView iconView = (ImageView) listItemView.findViewById(R.id.image);
+        // Removing the redundancy of casting
+        ImageView iconView = listItemView.findViewById(R.id.image);
 
         if (currentSong.hasImage()) {
             // Get the image resource ID from the current AndroidFlavor object and
@@ -63,6 +65,7 @@ public class SongAdapter extends ArrayAdapter<Song>{
         }
 
         // Set the theme color for the list item
+        // removed the redundancy of casting
         View textContainer = listItemView.findViewById(R.id.text_container);
         //Find the color that the resource ID maps to
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
