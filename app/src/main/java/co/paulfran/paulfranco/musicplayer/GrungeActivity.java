@@ -50,9 +50,9 @@ public class GrungeActivity extends AppCompatActivity {
         final ArrayList<Song> songs = new ArrayList<Song>();
 
         // Add word objects to the list of songs
-        songs.add(new Song("Smells Like Teen Spirit", "Nirvana", R.drawable.apps, R.raw.serenata));
-        songs.add(new Song("Come as you are", "Nirvana", R.drawable.apps, R.raw.serenata));
-        songs.add(new Song("Lithium", "Nirvana", R.drawable.apps, R.raw.serenata));
+        songs.add(new Song("Smells Like Teen Spirit", "Nirvana", R.drawable.app, R.raw.serenata));
+        songs.add(new Song("Come as you are", "Nirvana", R.drawable.app, R.raw.serenata));
+        songs.add(new Song("Lithium", "Nirvana", R.drawable.app, R.raw.serenata));
 
         // Create a new SongAdapter and we are calling it adapter. We are calling the contructor and passing it a context and the array list of song objects
         SongAdapter adapter = new SongAdapter(this, songs, R.color.category_blue);

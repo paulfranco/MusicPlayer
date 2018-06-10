@@ -50,7 +50,7 @@ public class ClassicalActivity extends AppCompatActivity {
         final ArrayList<Song> songs = new ArrayList<Song>();
 
         // Add song objects to the list of songs
-        songs.add(new Song("Serenade K 525 Eine Kleine Nachtmusik Allegro", "Mozart", R.drawable.apps, R.raw.serenata));
+        songs.add(new Song("Serenade K 525 Eine Kleine Nachtmusik Allegro", "Mozart", R.drawable.app, R.raw.serenata));
 
 
         // Create a new SongAdapter called adapter. We are calling the contructor and passing it a context and the array list of song objects

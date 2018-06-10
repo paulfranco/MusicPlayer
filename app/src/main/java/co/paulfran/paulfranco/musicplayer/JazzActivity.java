@@ -52,9 +52,9 @@ public class JazzActivity extends AppCompatActivity {
         final ArrayList<Song> songs = new ArrayList<Song>();
 
         // Add word objects to the list of songs
-        songs.add(new Song("My My My", "Gerald Albright", R.drawable.apps, R.raw.serenata));
-        songs.add(new Song("Bermuda Nights", "Gerald Albright", R.drawable.apps, R.raw.serenata));
-        songs.add(new Song("So Amazing", "Gerald Albright", R.drawable.apps, R.raw.serenata));
+        songs.add(new Song("My My My", "Gerald Albright", R.drawable.app, R.raw.serenata));
+        songs.add(new Song("Bermuda Nights", "Gerald Albright", R.drawable.app, R.raw.serenata));
+        songs.add(new Song("So Amazing", "Gerald Albright", R.drawable.app, R.raw.serenata));
 
         // Create a new SongAdapter called adapter. We are calling the contructor and passing it a context and the array list of song objects
         SongAdapter adapter = new SongAdapter(this, songs, R.color.category_blue);
